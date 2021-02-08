@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="http-equiv" content="text/html; charset=utf-8">
+  <meta name="http-equiv" content="text/css; charset=utf-8">
+  <meta name="http-equiv" content="text/javascript; charset=utf-8">
+  <meta name="auhtor" content="Wendell Kenneddy">
+  <meta name="creator" content="Wendell Kenneddy">
+  <meta name="description"
+    content="Uma aplicação que retorna a localização no alfabeto das letras que você digitar em seu texto.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Alfabeto, caracteres">
+  <meta property="og:title" content="Alphabet.io">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Alphabet.io">
+  <meta property="og:description"
+    content="Uma aplicação que retorna a localização no alfabeto das letras que você digitar em seu texto.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og: image" content="./assets/final-result/desktop.png">
+  <title>Alphabet.io</title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <script src="./script.js" charset="utf-8" type="text/javascript"
+    async></script>
+
+</head>
+
+<body>
+
+  <header id="page-header" role="banner" name="cabeçalho-da-pagina"
+    aria-roledescription="page-header">
+    <h1 id="logo" name="logo">Alphabet.io</h1>
+  </header>
+
+  <main class="container" role="main" aria-roledescription="page-main-content">
+
+    <section id="about" name="sobre" aria-roledescription="about">
+      <h2 id="how-it-works" name="como-funciona">Como funciona</h2>
+      <p>É bem simples: basta dar um texto como referência no campo de entrada
+        de texto abaixo, e então um parágrafo contendo a localização no alfabeto
+        referente a cada uma das letras será exibido.</p>
+      <p>Números também são
+        aceitos, bem como as letras acentuadas 'á', 'ã', 'ó', 'õ' e a letra 'ç'.
+        Símbolos como tralha (hashtag), parênteses e colchetes, com exceção do
+        sinal de exclamação, ponto ('.') e interrogação <strong>não são
+          aceitos</strong>,
+        e serão exibidos com '404'. Vírgulas são aceitas.</p>
+      <p>Entre cada caractere será exibido um hífen, e para cada espaço serão
+        exibidos dois hífens. Por exemplo: "A B C" irá retornar [1]--[2]--[3]. O
+        resultado, isto é, cada caractere, será exibido entre colchetes.</p>
+    </section>
+
+    <section id="input-and-result" name="seu-texto-e-resultado"
+      aria-roledescription="your-input-and-result">
+
+      <label for="inp">Digite seu texto aqui abaixo</label>
+      <div id="input-and-button">
+        <input type="text" id="inp" name="seu-texto"
+          placeholder="Seu texto aqui">
+        <button onclick="manipulateArray.printArrayAndCleanP()"
+          id="generate-result" name="gerar-resultado">Gerar resultado</button>
+      </div>
+
+      <div id="result">
+        <p id="demo" name="resultado">O resultado aparecerá aqui.</p>
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <footer id="page-footer" name="rodape-da-pagina" role="contentinfo"
+    aria-roledescription="pahe-footer">
+    <a href="https://github.com/wendell-kenneddy"
+      rel="external noopener noreferrer" target="_blank"
+      title="Link para o meu perfil no Github.">
+      <img src="./assets/github-icon.svg" alt="">
+    </a>
+    <p>Desenvolvido por Wendell Kenneddy</p>
+  </footer>
+
+</body>
+
+</html>

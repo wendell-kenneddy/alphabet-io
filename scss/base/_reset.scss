@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  background-color: $body-bg;
+
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  background-color: $container-color;
+  border: none;
+  border-radius: 0.25rem;
+  margin: 3.2rem auto 2rem;
+  padding: 1rem;
+  width: Min(90vw, 800px);
+}
+
+strong {
+  color: #f60a20;
+}
