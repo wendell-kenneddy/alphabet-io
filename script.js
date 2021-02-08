@@ -122,6 +122,9 @@ const manipulateArray = {
         case 'é':
           return '5(é)'
           break;
+        case 'ê':
+          return '5(ê)'
+          break;
         case 'ç':
           return '3(ç)'
           break;
