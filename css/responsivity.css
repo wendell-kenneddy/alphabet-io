@@ -1,0 +1,15 @@
+@media screen and (max-width: 700px) {
+  #input-and-button {
+    flex-direction: column;
+  }
+  
+  #input-and-button input,
+  #input-and-button button {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  #input-and-button button {
+    padding: 1rem;
+  }
+}
