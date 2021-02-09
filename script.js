@@ -9,7 +9,7 @@ const manipulateArray = {
   //Create an array from the given input and changes letters for numbers
   //and so on
   manipulateString() {
-    let myArray = Array.from(gatherInput().toLocaleLowerCase(), x => {
+    let myArray = Array.from(gatherInput().toLowerCase(), x => {
       switch (x) {
         case 'a':
           return 1
