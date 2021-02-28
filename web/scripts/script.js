@@ -35,3 +35,13 @@ function printResult() {
   container.innerHTML = alphabetPosition(gatherInput())
   document.querySelector('input#inp').value = ''
 }
+
+
+window.addEventListener('keydown', e => {
+  const kPressed = e.key
+
+  if (kPressed == 'Enter') {
+    printResult()
+  }
+
+})
