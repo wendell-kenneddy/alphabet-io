@@ -5,7 +5,7 @@
 ![Autor: Wendell Kenneddy](https://img.shields.io/badge/techs-HTML%2C%20SCSS%2C%20JS-brightgreen)
 ![Autor: Wendell Kenneddy](https://img.shields.io/badge/status-concluded-brightgreen)
 
-![Resultado Final](./assets/final-result-desktop.png)
+![Resultado Final](./.github/final-result-desktop.png)
 
 ---
 
