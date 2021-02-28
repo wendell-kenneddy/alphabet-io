@@ -45,16 +45,10 @@
       <p>É bem simples: basta dar um texto como referência no campo de entrada
         de texto abaixo, e então um parágrafo contendo a localização no alfabeto
         referente a cada uma das letras será exibido.</p>
-      <p>Números também são
-        aceitos, bem como as letras acentuadas 'á', 'ã', 'ó', 'õ', 'é', 'ê' e a
-        letra 'ç'.
-        Símbolos como tralha (hashtag), parênteses e colchetes, com exceção do
-        sinal de exclamação, ponto ('.') e interrogação <strong>não são
-        aceitos</strong>,
-        e serão exibidos com '404'. Vírgulas são aceitas.</p>
-      <p>Entre cada caractere será exibido um hífen, e para cada espaço serão
-        exibidos dois hífens. Por exemplo: "A B C" irá retornar [1]--[2]--[3]. O
-        resultado, isto é, cada caractere, será exibido entre colchetes.</p>
+      <p>Caracters especiais, bem como caracteres acentuados e números não serão
+        aceitos.</p>
+      <p>Entre cada número haverá um hífen, e espaços em branco serão exibidos
+        com [Espaço].</p>
     </section>
 
     <section id="input-and-result" name="seu-texto-e-resultado"
@@ -64,8 +58,8 @@
       <div id="input-and-button">
         <input type="text" id="inp" name="seu-texto"
           placeholder="Seu texto aqui">
-        <button onclick="manipulateArray.printArrayAndCleanP()"
-          id="generate-result" name="gerar-resultado">Gerar resultado</button>
+        <button onclick="printResult()" id="generate-result"
+          name="gerar-resultado">Gerar resultado</button>
       </div>
 
       <div id="result">
